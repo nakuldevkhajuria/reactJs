@@ -1,0 +1,21 @@
+.App{
+ height: 120vh;
+ margin-top: -40px;
+ width: 100vw;
+    background-image: linear-gradient(
+        rgb(68, 179, 243),
+        rgb(238, 146, 174),
+        rgb(241, 200, 212)
+        
+    );
+}
+.header{
+  text-align: center;
+  font-size: 40px;
+  font-family: 'Roboto', sans-serif;
+
+}
+#class{
+  text-align: center;
+}
+
