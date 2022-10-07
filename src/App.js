@@ -1,23 +1,31 @@
-import logo from './logo.svg';
+
 import './App.css';
+import ClassComponent  from './component/classComponent';
+import FunctionalComponent from './component/functionalComponent';
+// import ClassComponent from './component/classComponent';
+// import FunctionalComponent from './component/functionalComponent';
 
 function App() {
+ 
+ 
   return (
+
+    
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
+        <p class="text-muted">
+          Styling Using Functional and Class Component
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+       
       </header>
+      <p className='twoButtons'>
+       
+        </p><br /><br />
+        <div className='bothComponents'>
+        {/* <FunctionalComponent /> */}
+        <ClassComponent />
+      <FunctionalComponent />
+        </div>
     </div>
   );
 }
