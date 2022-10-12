@@ -3,6 +3,8 @@
 
 import React, { Component } from 'react';
 import "./styles.css"
+import "./home";
+import { Link } from 'react-router-dom';
 
 
 export default class Navbar extends Component {
@@ -14,11 +16,11 @@ export default class Navbar extends Component {
             <nav >
                     <ul className='nav'>
                         <li>
-                            <a href="/">Home</a></li>
+                            <Link to="/home">Home</Link></li>
                         <li>
-                            <a href="/student">Students</a></li>
+                            <Link to="/student">Students</Link></li>
                         <li>
-                            <a href="/contact">Contact US</a>
+                            <Link to="/contact">Contact US</Link>
                         </li>
 
                     </ul>

@@ -1,6 +1,9 @@
+import "./styles.css"
+
 export const Home = () => {
 
     return(
-        <div>Home</div>
+        <div id="homePage">Home Page</div>
+        
     )
 }

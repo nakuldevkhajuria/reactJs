@@ -1,6 +1,7 @@
+import "./styles.css"
 export const Contact = () => {
 
     return(
-        <div>Contact Us</div>
+        <div id="contact">Contact US Page</div>
     )
 }

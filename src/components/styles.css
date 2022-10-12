@@ -8,23 +8,24 @@ body{
 .nav{
     height: 3rem;
     margin-top: 0px;
-    background-color: rgb(225, 115, 115);
+    background-color: rgb(2, 2, 155);
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     gap: 2rem;
-    align-items: center;
     padding: 0 1rem;
 }
 .nav{
     font-size: 2rem;
+    color: white;
+    font-family: 'M PLUS 1p', sans-serif;
 }
 
 .nav {
-    padding: 0;
-    margin: 0;
+    /* padding: 0;
+    margin: 0; */
     list-style: none;
-    display: flex;
-    gap: 1rem;
+ 
+
 
 }
 .nav a {
@@ -36,4 +37,91 @@ body{
 }
 .nav li.active {
     background-color: aliceblue;
+}
+#homePage{
+    padding-left: 3rem;
+}
+#contact{
+    padding-left: 3rem ;
+}
+.studentHeadline{
+    font-size: 40px;
+    margin: auto;
+    height: 70px;
+    width: 80vw;
+    display: flex;
+    justify-content: space-between;
+}
+.studentHeadline button{
+    font-size: 20px;
+    border:1px black solid;
+    border-radius: 30px ;
+    width: 17vw;
+    height: 45px;
+}
+.studentHeadline div{
+font-weight: bold;
+}
+#studentDesc{
+  margin-right: 300px;
+}
+#studentDesc div{
+  display: flex;  
+  justify-content: space-evenly;
+  padding: 4rem;
+}
+#studentDesc input{
+width: 400px;
+height: 50px;
+border: black 1px solid;
+background-color: transparent;
+}
+#buttons {
+    float: right;
+    margin-right: -300px;
+    margin-top: -50px;
+    gap: 2vw;
+}
+#buttons button {
+width: 18rem;
+height: 3rem;
+border: 1px solid black;
+border-radius: 30px;
+font-size: 20px;
+/* float: right; */
+}
+#savedData{
+    background-color: red;
+    color: wheat;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 2rem;
+    padding: 0 1rem;
+    margin-top: 200px;
+}
+.appendData{
+   display: flex;
+   justify-content: space-evenly;
+   list-style: none;
+   /* gap: 2rem; */
+}
+#student-table {
+    background-color: white;
+    font-size: 20px;
+    margin: auto;
+    height: 70px;
+    width: 80vw;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    border-radius: 6px;
+    margin-top: 1px;
+
+}
+.fix-1{
+    list-style: none;
+}
+#lists{
+
 }
