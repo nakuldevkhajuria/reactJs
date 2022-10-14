@@ -1,23 +1,20 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
+
 import './App.css';
+// import NormalComponent from './components/NormalComponent';
+import ParentComponent from './components/ParentComponent';
+import ClickCounter from './HocComponents/ClickCounter';
+// import PureComponents from './components/PureComponents';
 
 function App() {
+  
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      
+      <ParentComponent />
+      <ClickCounter />
+
+      
     </div>
   );
 }
