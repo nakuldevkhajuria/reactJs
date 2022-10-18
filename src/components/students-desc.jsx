@@ -2,39 +2,40 @@ import { Component } from "react"
 import "./styles.css"
 import { Link } from "react-router-dom";
 
+// const Context = createContext('');
+
+
 export default class Studentsdesc extends Component{
     constructor(props){
         super(props);
-        this.displayData = [];
+     
         this.state = {
             fname : '',
             age : '',
             course : '',
             batch : '',
-            showName : this.displayData
+            showName: false
         }
     }
+    
     addValue = () => {
         // if(this.displayData.length===0){
 
         // }
-       
-        this.displayData.push(
-            <div className="appendData">
-               <li>{this.state.fname}</li> 
-               <li>{this.state.age} </li> 
-               <li></li>{this.state.course}  <li>{this.state.batch}</li>
-               <li><Link to="/student-desc" >Link</Link></li>
-               <hr />
-            </div>
+       let Updated = this.props.users;
+       Updated.push({fname:this.state.fname ,age: this.state.age,course: this.state.course, batch:  this.state.batch}
+
+               
         );
-        this.setState({
-            showName: this.displayData,
-            fname: "",
-            age: "",
-            course: "",
-            batch: ""
-          });
+        console.log(Updated);
+       
+        // this.setState({
+            
+        //     fname: "",
+        //     age: "",
+        //     course: "",
+        //     batch: ""
+        //   });
         
 // this.setState({
 
@@ -74,9 +75,7 @@ export default class Studentsdesc extends Component{
               
             </div>
            
-
-            </div> <div id="savedData">{this.displayData}
-        </div>
+            </div> 
             </div>
     )
     }

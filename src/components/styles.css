@@ -125,3 +125,31 @@ font-size: 20px;
 #lists{
 
 }
+#box{
+    /* margin: auto; */
+    /* padding: 1rem 1rem 1rem 1rem; */
+    
+    color: black;
+    display: flex;
+    /* flex-flow: row wrap; */
+    justify-content: space-around;
+    list-style: none;
+    padding: 1rem 1rem;
+
+
+
+}
+
+.boxes{
+    /* display: flex;
+    flex-direction: column;
+    justify-content:center; */
+    display: flex;
+    flex-flow: column wrap;
+    /* gap: 1rem; */
+    background-color: white;
+    width: 80vw;
+    margin: auto;
+    border-radius: 10px;
+    
+}
