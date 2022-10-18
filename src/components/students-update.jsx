@@ -29,18 +29,19 @@ import { Link } from "react-router-dom";
 
     addValue = () => {
 
+       
+        const updateArray = this.props.users;
         
-        const updateArray = [...this.props.users];
-        console.log(updateArray);
         
         const currentUser = { fname: this.state.fname, age: this.state.age, course: this.state.course, batch: this.state.batch }
 
-        console.log(currentUser)
+  
         updateArray[this.props.params.index] = currentUser
-        console.log(currentUser)
-        console.log(updateArray[this.props.params.index])
+    console.log(this.props.params.index)
+    console.log(this.props.users[this.props.params.index].age);
+        
         this.props.updateUsers(updateArray)
-        console.log(updateArray)
+      
         this.setState({ showName: true })
     }
 
@@ -51,21 +52,21 @@ import { Link } from "react-router-dom";
  <div>
         <div id="studentDesc">
             <div>
-           <input  type="text" placeholder="Name" value={this.state.fname} 
+           <input  type="text" placeholder={this.props.users[this.props.params.index].fname} value={this.state.fname} 
 
            onChange={(e) => { this.setState({fname:e.target.value})}}/>
           
-           <input type="text" placeholder="Age" 
+           <input type="text" placeholder={this.props.users[this.props.params.index].age}
            value={this.state.age} 
            onChange={(e) => { this.setState({age:e.target.value})}}
            />
            </div>
            <div>
-           <input type="text" placeholder="Course"
+           <input type="text" placeholder={this.props.users[this.props.params.index].course}
            value={this.state.course} 
            onChange={(e) => { this.setState({course:e.target.value})}}
            />
-           <input type="text"  placeholder="Batch"
+           <input type="text"  placeholder={this.props.users[this.props.params.index].batch}
            value={this.state.batch} 
            onChange={(e) => { this.setState({batch:e.target.value})}}
            />

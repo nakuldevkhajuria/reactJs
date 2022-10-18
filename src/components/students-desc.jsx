@@ -27,7 +27,7 @@ export default class Studentsdesc extends Component{
 
                
         );
-        console.log(Updated);
+        // console.log(Updated);
        
         // this.setState({
             
