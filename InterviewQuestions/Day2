@@ -1,0 +1,70 @@
+Queestion 1: what is the difference between react and react native? which one is library or framework?
+Solution:
+Both are created by facebook.
+react native is a framework. reactjs is a library.
+react is created to build user interfaces for web applications. single page applications
+react native is created to build mobile applications that are cross platformed.
+Cross-platform means it can work on any platform, like windows, Android, IOS.
+react uses routing(react-router-dom), and react native uses API to send information.
+React uses Virtual Dom to render web application. in react native it uses APIs to render.
+Reactjs uses Virtual Dom for UX, while react Native leverages APIs to render beteween
+UI components that can be used again for both android and IOS platforms
+
+
+Question 2: what is the package name you are using for routing?
+Solution:
+The package react-router-dom is used to navigate within the routes  we create.
+
+
+Question 3: Routing Implementation?
+Solution
+
+step 1: install using "npm install react-router-dom"
+stpe 2: in App function. import and use. <BrowserRouter>,<Routes>,<Route>.
+step 3: <Route path="/" element="<Home />" /> each Route look like this
+step 4: Routes is inside BrowserRouter. and all the Route are inside Routes.
+stpe 5: now we can use these Route, in another components.
+step 6: using <Link to="/">Home </Link>  , on clicking home, path  this "/" will take us to component Home.
+
+Question 4: How do you switch/navigate form one component to another in React?
+Solution: 
+
+1. Link tag 2. Navbar tag 3. Redirect tag
+Link we have seen, in Navbar it work same as Link, in addition it comes with one more 
+attribute, known as "activeClassName" which helps us to add a new class when the 
+page is active. else which helps us to add the class to the anchor tag when page url will match.
+In Redirect Rendering a <Redirect to"/path/to/redirect" /> component is used to manage the redirection
+When you manage the redirection through the <Redirect> component then it will override the current
+location in the history stack.
+All these three are inported from "react-router-dom"
+4> history.push this will push the new entry in the history stack.
+5> history.replace for example: this.props.history.replace(path,state)
+
+Question 5: What is lazy loading in react ?
+Solution:
+
+In essence, lazy loading means that a component or a part of code must get loaded when it is required. 
+It is also referred to as code splitting and data fetching . Talking about React specifically, it bundles
+ the complete code and deploys all of it at the same time.
+
+Whereas lazy loading takes its time loading images, eager doesn't have the same patience. Eager loading
+ is the action of force-loading all the assets on a page at once. It loads related entities, even if the 
+visitor never scrolls down to it. You may have seen eager loading in action before as well.
+React is a eager loading example, in which all of the code bundles are loaded in the start.
+
+React apps are bundled with the preinstalled bundlers like webpack before making the React application 
+to be production ready. When this bundled project is loaded, it loads the whole source code at once, 
+even those pages which are rarely visited by the user. So, to prevent the entire loading of the application
+ at once, we use the concept of lazy loading to decrease the DOM load time and to increase the speed of the application.
+
+Question 6: Difference between Stateful and stateless components?
+Solution:
+class components are stateful components and functional compoenents are stateless.
+major reason is that, class components uses lifecycle hierarcy for rendering like
+ComponentDidMount. but we cannot use this in functional components.
+and functional components are as pure components only.
+class componets receive props and renders it using JSX elements.
+as in Stateless comp, it simply receives props or states and directly
+executes it and gives the result.
+in stateful we have build in methods but not in stateless components.
+
