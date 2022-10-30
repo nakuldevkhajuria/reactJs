@@ -1,0 +1,85 @@
+Question 1:
+An event is an action that could be triggered as a result of the user action or system generated
+ event. For example, a mouse click, loading of a web page, pressing a key, window resizes,
+ and other interactions are called events.
+React has its own event handling system.
+in HTML we declare event handler like this.
+    <button onclick="showMessage()">  
+           Hello JavaTpoint  
+    </button>  
+with JSX, afunction is passed as a event handler instead of string.
+and in React we devlare event like this 
+    <button onClick={showMessage}>  
+          Hello JavaTpoint  
+    </button>  
+
+https://www.javatpoint.com/react-events
+
+Question 2:
+Memory leak occurs when programmers create a memory in heap and forget to delete it. 
+Memory leaks are particularly serious issues for programs like daemons and servers which 
+by definition never terminate.
+a memory leak is a type of resource leak that occurs when a computer program incorrectly
+ manages memory allocations in a way that memory that is no longer needed is not released.
+
+There are three things which can cause this:
+Memory leaks in React applications are primarily a result of not canceling subscriptions
+made when a component was mounted before the component gets unmounted. These subscriptions could be a:
+
+    DOM Event Listener
+    WebSocket Subscription
+    Request to an API(AbortControllers)
+for example: when we addEventListener we also need to remove it , to prevent any memory leak'.
+
+
+Question 3:
+Do you prefer function-based or class component and why ?
+I prefer functional based components.
+because:
+1. functional bases comp doesnt use the tradional way of component life cycles.
+2. func comp uses different type of hooks, which can give the same fundamental features like
+class components give.
+3. func comp are just like another javascript function, which supports all features as a 
+pure function.
+4. we dont need to declare constructor  like we do in class components.
+5. constructor is a must to have method in class component. cause constructor is also called
+before it reaches Render, and constructor contains the  states.
+6. func components are also easy to use. we also getting new updates for fun comp. but not for
+class components.
+
+Question 4:
+Explain reducer as pure function in redux?
+In redux, reducers are pure functions that contains the logic and the calculation which 
+need to be performed on the state.Reducer(pure function) accepts the initial state of the state
+being used and the action type. it updates the state and responsd with a new state.
+Reudcers are pure functions, which require the previous state and an action. and returns with 
+a new state object, without mutating the previous state.
+Pure functions are those which takes a set of inputs and give the same output. 
+which gives the sameout result for same set of argumnets. there should not be any external 
+argument inside function.
+
+Question 5:
+
+Thunk allows us to dispatch actions manually, which gives us the power to incorporate some
+ logic or run some asynchronous code before dispatching an action. The function returned 
+from action is called a thunk function which is called with two arguments : 
+
+1. dispatch: It is a method used to dispatch actions, that can be received by reducers. 
+2. getState: It gives access to store inside the thunk function.
+
+A thunk function may contain any arbitrary logic, sync, or async, and can call dispatch
+ or getState at any time. Before moving any further let’s understand the difference between
+ the flow of redux with and without thunk.
+
+Question 6:
+What do you know about NPM?
+Npm stands for Node Package Manager. It is a package manager for the Node JavaScript platform.
+ Npm is known as the world's largest software registry. 
+
+npm consists of three distinct components:
+
+1. the website
+2. the Command Line Interface (CLI)
+3. the registry
+
+Download standalone tools you can use right away.
