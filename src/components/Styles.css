@@ -1,0 +1,49 @@
+.App{
+    display: flex;
+    flex-flow: column wrap;
+}
+.firstHead{
+    padding:  1rem 2rem 2rem 5rem;
+    font-size: medium;
+    font-weight: normal;
+    text-align: left;
+    width: 50%;
+    color: black;
+    font-family: arial,sans-serif;
+}
+.secondHead{
+    padding:  1rem 2rem 2rem 5rem;
+    font-size: medium;
+    font-weight: normal;
+    text-align: left;
+    width: 50%;
+    color: black;
+    font-family: arial,sans-serif;
+}
+.thirdHead{
+    padding:  1rem 2rem 2rem 5rem;
+    font-size: medium;
+    font-weight: normal;
+    text-align: left;
+    width: 50%;
+    color: black;
+    font-family: arial,sans-serif;
+}
+.fourthHead{
+    padding:  1rem 2rem 2rem 5rem;
+    font-size: medium;
+    font-weight: normal;
+    text-align: left;
+    width: 50%;
+    color: black;
+    font-family: arial,sans-serif;
+}
+.fifthHead{
+    padding:  1rem 2rem 2rem 5rem;
+    font-size: medium;
+    font-weight: normal;
+    text-align: left;
+    width: 50%;
+    color: black;
+    font-family: arial,sans-serif;
+}
