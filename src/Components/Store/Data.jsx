@@ -5,11 +5,11 @@ export const dataContext = createContext();
 const Data = (props) => {
   const [students, setStudents] = useState([
     {
-      id: "1",
-      Name: "John",
-      Age: "24",
-      Course: "MERN",
-      Batch: "June",
+      id: "",
+      Name: "",
+      Age: "",
+      Course: "",
+      Batch: "",
     }]);
   return (
     <div>

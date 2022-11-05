@@ -7,7 +7,7 @@ body{
 }
 .parent-div{
     height: 55px;
-    background-color: rgb(218, 186, 145);
+    background-color: rgb(10, 224, 217);
     display: flex;
     justify-content: space-around;
 }
@@ -20,12 +20,13 @@ body{
 table.GeneratedTable {
     width: 80%;
     margin-top: 40px;
-    background-color: #9e8361;
+    background-color: transparent;
     border-collapse: collapse;
     border-width: 5px;
     border-color: #00aaff;
     border-style: groove;
     color: #000000;
+  
   }
   
   table.GeneratedTable td, table.GeneratedTable th {
@@ -33,10 +34,12 @@ table.GeneratedTable {
     text-align: center;
     border-color: rgb(203, 230, 238);
     border-style: groove;
+   
     padding: 10px;
   }
   th{
     font-size: 1.4em;
+    
   }
   td{
     font-size: 1.2em;
@@ -87,24 +90,24 @@ table.GeneratedTable {
   }
 
   .button {
-    width: 180px;
+    width: 210px;
     text-align: center;
   /* backface-visibility: hidden; */
   position: relative;
-  left: 280px;
+  left: 330px;
   cursor: pointer;
   display: inline-block;
   white-space: nowrap;
-  background: linear-gradient(180deg,#f9f9f9 0%,#e0e0e0 100%);
-  border-radius: 100px;
+ 
+  border-radius: 10px;
   border: 0.5px solid rgba(0,0,0,0.2);
   border-width: 0.5px 0.5px 0.5px 0.5px;
   padding: 4px 22px 5px 22px;
-    color: #273;
-  font-size: 17px;
+ 
+  font-size: 19px;
   font-family: Helvetica Neue;
   font-weight: 900;
-  font-style: normal
+  font-style: normal;
   }
   .button > div {
     color: #999;
